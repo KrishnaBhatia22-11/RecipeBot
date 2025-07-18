@@ -1,0 +1,6 @@
+streamlit
+python-dotenv
+requests
+agno
+flask
+google-generativeai
