@@ -9,8 +9,8 @@ import requests
 # 🔐 Load environment variables
 # ------------------------------
 load_dotenv()
-GEMINI_API_KEY = os.getenv("AIzaSyCrkZJib8QQFXD12FprTt0RXdLBwvYyMYg")
-EXA_API_KEY = os.getenv("e93ca605-824c-4b1a-b16c-9c57ad6e6ed4")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+EXA_API_KEY = os.getenv("EXA_API_KEY")
 
 # ------------------------------
 # 🤖 Gemini Model Wrapper Class
