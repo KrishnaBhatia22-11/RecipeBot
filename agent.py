@@ -6,7 +6,7 @@ from chat import GeminiAssistant  # custom class defined in chat.py
 # ---------------------------------------------------
 # Initialize Gemini-powered model via custom wrapper
 # ---------------------------------------------------
-recipe_model = GeminiAssistant(api_key="AIzaSyCrkZJib8QQFXD12FprTt0RXdLBwvYyMYg")
+recipe_model = GeminiAssistant(api_key="GEMINI_API_KEY")
 
 # ---------------------------------------------------
 # Define the agent using Agno + Gemini + prompt
