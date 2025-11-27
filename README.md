@@ -1,44 +1,57 @@
-🚀 RecipeBot – AI-Powered Recipe Generator
+# 🍽️ RecipeBot – AI-Powered Recipe Generator
 
-A smart AI application built using Google Gemini, Agno AI Agents, Python, and Streamlit.
-RecipeBot takes a food item (e.g., "dal makhani") and instantly generates a complete recipe including ingredients, steps, cooking time, and tips — all powered by modern AI tools.
+RecipeBot is an AI-driven application that generates complete cooking recipes based on user input.  
+It uses **Google Gemini**, **Agno AI Agents**, **Python**, and **Streamlit** to build a fast and interactive recipe assistant.
 
-✨ Features
+Simply enter any dish name (e.g., *"dal makhani"*) and get a detailed recipe instantly!
 
-🍽 AI-generated recipes based on user input
+---
 
-🤖 Gemini 2.5-Pro model integration
+## 🚀 Features
 
-🧠 Agno Agent-powered prompt processing
+- 🔥 AI-generated recipes using Gemini 2.5 Pro  
+- 🤖 Agno-powered intelligent agent  
+- ⚡ Clean and interactive Streamlit UI  
+- 🧩 Modular, scalable code architecture  
+- 🔐 Secure API key management via `.env`  
+- 🌱 Easy to extend with more AI tools or models  
 
-⚡ Streamlit UI for fast, interactive usage
+---
 
-🔐 Easy .env based API key management
+## 📦 Project Structure
 
-💡 Modular code design for future expansion
-
-📂 Project Structure
 RecipeBot/
 │
-├── app.py               # Main Streamlit application
-├── agent.py             # Agno AI Agent configuration
-├── chat.py              # Message structure
-├── config.py            # Model configuration settings
-├── templates/           # HTML / UI templates (if any)
-├── static/              # Images/CSS (optional)
-├── requirements.txt     # Dependencies
-├── .env                 # API keys (ignored on GitHub)
-└── README.md            # This file
+├── app.py # Main Streamlit application
+├── agent.py # Agno AI agent configuration
+├── chat.py # Helper methods for chat/messages
+├── config.py # Model configuration settings
+├── templates/ # HTML templates (optional)
+├── static/ # Images/CSS assets (optional)
+├── requirements.txt # Python dependencies
+├── .env # Environment variables (API keys)
+└── README.md # Documentation
 
-🛠 Tech Stack
-Technology	Usage
-Python	Backend logic
-Streamlit	Web Interface
-Agno	AI agent processing
-Google Gemini API	Recipe generation
-dotenv	Environment variable handling
-🔧 Installation & Setup
-1️⃣ Clone the repository
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology           | Purpose                           |
+|---------------------|------------------------------------|
+| **Python**          | Backend logic                      |
+| **Streamlit**       | Web UI interface                   |
+| **Google Gemini API** | Recipe generation via LLM          |
+| **Agno AI Agent**   | Prompt processing + reasoning      |
+| **dotenv**          | Load environment variables         |
+| **Requests**        | API communication                  |
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/your-username/RecipeBot.git
 cd RecipeBot
 
@@ -51,8 +64,7 @@ Windows (PowerShell):
 
 .\venv\Scripts\activate
 
-
-macOS / Linux:
+macOS/Linux:
 
 source venv/bin/activate
 
@@ -63,77 +75,65 @@ pip install -r requirements.txt
 
 Create a file named .env in the project root:
 
-GOOGLE_API_KEY=your_gemini_key_here
-EXA_API_KEY=your_exa_key_if_used
+GOOGLE_API_KEY=your_gemini_api_key_here
+EXA_API_KEY=your_exa_key_here    # optional
 
 
-⚠️ Do NOT upload .env to GitHub.
+⚠️ Important: Do NOT upload .env to GitHub.
 
-▶️ Running the Project
+▶️ Running the Application
+
+Use Streamlit to launch the app:
+
 python -m streamlit run app.py
 
 
-Then open the link:
+The app will open at:
 
 http://localhost:8501
 
-💡 How It Works
-1. User enters a dish name
+💡 How RecipeBot Works
 
-Example: "dal makhani"
+User enters a dish name (e.g., "Dal Makhani").
 
-2. Agno Agent processes the prompt
+The Agno AI agent processes the prompt.
 
-Formats message
+The request is sent to Google Gemini for recipe generation.
 
-Sends it to Gemini model
+A structured recipe (ingredients, steps, tips, etc.) is returned.
 
-3. Gemini generates the recipe
+Streamlit displays the result in a clean format.
 
-Ingredients
+📸 Screenshots (optional for GitHub)
+/screenshots/home.png
+/screenshots/recipe_output.png
 
-Steps
 
-Tips
+(Upload images and update links later.)
 
-Cooking time
+🔮 Future Enhancements
 
-4. Streamlit displays the structured output
-📸 Screenshots (to add in repo)
+🗣️ Add voice input
 
-You can include:
+🛒 Generate shopping list automatically
 
-Home UI
+🖼️ Add AI-generated food images (Gemini Vision)
 
-Input example
+🍽️ Multi-recipe meal planner
 
-Generated recipe output
-
-(Upload images to GitHub and attach here.)
-
-🚀 Future Improvements
-
-Add voice input
-
-Add recipe image generation (Gemini Vision)
-
-Add shopping list generator
-
-Save recipe history
-
-Multi-dish meal planner
+📚 Save recipe history / user login
 
 🤝 Contributing
 
-Pull requests are welcome.
-For major changes, please open an issue first.
+Contributions are welcome!
+Feel free to open an issue or submit a pull request.
 
-📜 License
+📄 License
 
 This project is licensed under the MIT License.
 
 👨‍💻 Author
 
 Krishna Bhatia
-BTech CSE-AIML
+BTech CSE – AIML
 Manav Rachna International Institute of Research & Studies
